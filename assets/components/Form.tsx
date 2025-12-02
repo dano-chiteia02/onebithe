@@ -1,11 +1,22 @@
-import { StyleSheet, Text, TextInput, View, Image} from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button} from 'react-native';
 
 
-export default function App() {
+export default function Form() {
   return (
-    <View >
-      <Text>form components ffff</Text>
-        <TextInput placeholder='Agora sim faz sentido eu estar a usar o text input ' />
+<View>
+    <View>
+      <Text> Altura</Text>
+      <TextInput placeholder='ex: 1.75'
+      keyboardType='numeric'
+      ></TextInput>
+      <Text>Peso</Text>
+      <TextInput placeholder='ex: 60' 
+      keyboardType='numeric'>
+      </TextInput>
+
+    <Button title='Calcular IMC' />
+
     </View>
+</View>
   );
 }

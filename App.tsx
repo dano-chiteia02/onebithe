@@ -1,20 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View} from 'react-native';
 import Form from './assets/components/Form';
+import Main from './assets/components/Main';
+import Title from './assets/components/Title';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View>
-       
-      </View>
-      
-
-      <Text>Its de first time whrinting in agora colou  react native ap</Text>
-       <Form />
-      <TextInput placeholder='sera que assim' />
-      <TextInput placeholder='sera que assim' keyboardType='numeric' />
-      <StatusBar style="auto" />
+      <Title />
+      <Main />
     </View>
   );
 }
